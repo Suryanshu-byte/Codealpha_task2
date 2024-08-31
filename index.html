@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="player-header">
+            <h2 id="track-title">Track Title</h2>
+            <p id="track-artist">Artist Name</p>
+        </div>
+        <div class="player-controls">
+            <button id="prev-btn" class="control-btn">&#9664;&#9664;</button>
+            <button id="play-btn" class="control-btn">&#9654;</button>
+            <button id="next-btn" class="control-btn">&#9654;&#9654;</button>
+        </div>
+        <div class="track-info">
+            <input type="range" id="progress-bar" value="0" max="100">
+            <audio id="audio" src=""></audio>
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
